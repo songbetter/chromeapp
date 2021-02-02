@@ -55,7 +55,7 @@ body {
 }
 
 .sub{
-    margin-top: 320px;
+    margin-top: 242px;
     margin-left: 10px;
 }
 .amPm{
@@ -67,15 +67,15 @@ body {
     padding-block-end: 20px;
 }
 .sec{
-    padding-block-start: 7px;
+    padding-block-start: 17px;
 }
   h1{
-      font-size:200px;
+      font-size:150px;
       margin-top:50%;
       margin-bottom:0%;
   }
 
   h4{
-      font-size: 50px;
+      font-size: 30px;
       margin: auto;
   }
