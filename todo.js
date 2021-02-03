@@ -15,7 +15,7 @@ function deleteToDo(event){
     // parseInt string을 number로 바꿔준다.
     return toDo.id !== parseInt(li.id);
 });
-toDos = cleanToDos
+toDos = cleanToDos;
 saveToDos();
 }
 
@@ -23,7 +23,7 @@ saveToDos();
 function saveToDos(){
     // JSON.stringify javascript object를 string으로 바꿔준다.
     // JSON: JavaScript Object Notation
-    localStorage.setItem(TODOS_LS, JSON.stringify)(toDos);
+    localStorage.setItem(TODOS_LS, JSON.stringify(toDos));
 }
 
 // li, delBtn, span, newID를 만든다.
@@ -45,8 +45,8 @@ function paintToDo(text){
         text: text,
         id: newId
     };
-    saveToDos();
     toDos.push(toDoObj);
+    saveToDos();
 }
 
 // form에 입력받은 후 ToDo list를 만든다.
@@ -72,7 +72,7 @@ function loadToDos(){
 
 function init() {
     loadToDos();
-    toDoForm.addEventListener("submit", handleSubmit)
+    toDoForm.addEventListener("submit", handleSubmit);
 }
 
 init();
