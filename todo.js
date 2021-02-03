@@ -45,8 +45,8 @@ function paintToDo(text){
         text: text,
         id: newId
     };
-    saveToDos();
     toDos.push(toDoObj);
+    saveToDos();    
 }
 
 // form에 입력받은 후 ToDo list를 만든다.
